@@ -10,6 +10,7 @@ export class ItemsService {
 
     async findAll(): Promise<Item[]>{
         console.log('hello');
+        console.log('world');
     return await this.itemModel.find();
 }
     async findOne(id: string): Promise<Item>{
