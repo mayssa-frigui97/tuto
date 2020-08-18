@@ -9,7 +9,6 @@ export class ItemsService {
     constructor(@InjectModel('Item') private readonly itemModel: Model<any>){}
 
     async findAll(): Promise<Item[]>{
-        console.log('hello world');
     return await this.itemModel.find();
 }
     async findOne(id: string): Promise<Item>{
